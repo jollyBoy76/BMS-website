@@ -10,12 +10,13 @@
 <body>
     <div class="container">
 
-        <div class="logo">
-            <img src="bms_logo.jpg" alt="Bank Logo">
-        </div>
-
+        
         <!-- Main Menu Screen -->
         <div id="main-menu" class="screen active">
+            <div class="logo">
+                <img src="bms_logo.jpg" alt="Bank Logo">
+            </div>
+            
             <h1> Banking System</h1>
             <button class="menu-btn" onclick="showScreen('register')"> Register new user</button>
             <button class="menu-btn" onclick="showScreen('login')"> Login</button>
@@ -86,6 +87,7 @@
                     <option value="Saving">Saving Account</option>
                 </select>
             </div>
+            <!-- <button class="menu-btn btn" onclick="displayUserInfo()"> User Info</button> -->
             <button class="menu-btn btn-primary" onclick="createAccount()"> Create Account</button>
             <button class="menu-btn btn-secondary" onclick="showScreen('user-dashboard')"> Back</button>
         </div>

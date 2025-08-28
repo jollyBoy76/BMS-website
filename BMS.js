@@ -7,16 +7,16 @@ let users = [
 ];
 
 let accounts = [
-    {id: 1, userID: 1, type: "Current", balance: 10400, history: ["Deposited Rs.50.00 on 11:01 PM, 26 August 2025", "Withdrawed Rs.150.00 on 11:01 PM, 26 August 2025", "Withdrawed Rs.1000.00 on 11:01 PM, 26 August 2025", "Deposited Rs.10000.00 on 11:01 PM, 26 August 2025"]},
-    {id: 2, userID: 1, type: "Saving", balance: 8500, history: ["Deposited Rs.15000.00 on 11:18 PM, 26 August 2025", "Withdrawed Rs.7000.00 on 11:18 PM, 26 August 2025", "Withdrawed Rs.500.00 on 11:18 PM, 26 August 2025", "Deposited Rs.1000.00 on 11:18 PM, 26 August 2025"]},
-    {id: 3, userID: 2, type: "Current", balance: 1200, history: ["Deposited Rs.1500.00 on 11:22 PM, 26 August 2025", "Withdrawed Rs.300.00 on 11:23 PM, 26 August 2025"]},
-    {id: 4, userID: 3, type: "Saving", balance: 5000, history: ["Deposited Rs.5000.00 on 01:14 AM, 27 August 2025"]}
+    {id: 2025080001, userID: 1, type: "Current", balance: 10400, history: ["Deposited Rs.50.00 on 11:01 PM, 26 August 2025", "Withdrawed Rs.150.00 on 11:01 PM, 26 August 2025", "Withdrawed Rs.1000.00 on 11:01 PM, 26 August 2025", "Deposited Rs.10000.00 on 11:01 PM, 26 August 2025"]},
+    {id: 2025080002, userID: 1, type: "Saving", balance: 8500, history: ["Deposited Rs.15000.00 on 11:18 PM, 26 August 2025", "Withdrawed Rs.7000.00 on 11:18 PM, 26 August 2025", "Withdrawed Rs.500.00 on 11:18 PM, 26 August 2025", "Deposited Rs.1000.00 on 11:18 PM, 26 August 2025"]},
+    {id: 2025080003, userID: 2, type: "Current", balance: 1200, history: ["Deposited Rs.1500.00 on 11:22 PM, 26 August 2025", "Withdrawed Rs.300.00 on 11:23 PM, 26 August 2025"]},
+    {id: 2025080004, userID: 3, type: "Saving", balance: 5000, history: ["Deposited Rs.5000.00 on 01:14 AM, 27 August 2025"]}
 ];
 
 let currentUser = null;
 let currentAccount = null;
 let nextUserId = 4;
-let nextAccountId = 5;
+let nextAccountId = 2025080005;
 
 /**
  * Shows a specific screen by hiding all others and displaying the target screen
@@ -188,11 +188,11 @@ function loginUser() {
 function displayUserInfo() {
     const userInfoDiv = document.getElementById('user-info-display');
     userInfoDiv.innerHTML = `
-        <h3>👤 Your Information</h3>
-        <p><strong>📧 Email:</strong> ${currentUser.email}</p>
-        <p><strong>📞 Phone:</strong> ${currentUser.phone}</p>
-        <p><strong>🏠 Address:</strong> ${currentUser.address}</p>
-        <p><strong>🎂 DOB:</strong> ${currentUser.dob}</p>
+        <h3> Your Information</h3>
+        <p><strong> Email:</strong> ${currentUser.email}</p>
+        <p><strong> Phone:</strong> ${currentUser.phone}</p>
+        <p><strong> Address:</strong> ${currentUser.address}</p>
+        <p><strong> DOB:</strong> ${currentUser.dob}</p>
     `;
 }
 
@@ -358,32 +358,6 @@ function logout() {
     showMessage('Logged out successfully!', 'success');
 }
 
-/**
- * Shows help information to the user
- */
-function showHelp() {
-    alert(`🏦 Banking Management System Help
-
-📝 Registration:
-- Fill all required fields
-- Use valid email format
-- Phone must be 10 digits
-- Password: min 8 chars, 1 upper, 1 lower, 1 digit, 1 special
-
-💼 Account Management:
-- Create Current or Saving accounts
-- Each user can have one of each type
-- Access accounts to perform transactions
-
-💰 Transactions:
-- Deposit: Add money to your account
-- Withdraw: Remove money (sufficient balance required)
-- View history: See all past transactions
-
-🔐 Security:
-- Keep your password safe
-- Logout when finished`);
-}
 
 /**
  * Exits the application with confirmation
