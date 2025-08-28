@@ -10,7 +10,9 @@
 <body>
     <div class="container">
 
-        
+        <div id="help-container">
+            <button class="help-btn" onclick="showScreen('help')">?</button>
+        </div>
         <!-- Main Menu Screen -->
         <div id="main-menu" class="screen active">
             <div class="logo">
@@ -21,6 +23,7 @@
 
             <button class="menu-btn" onclick="showScreen('register')"> Register new user</button>
             <button class="menu-btn" onclick="showScreen('login')"> Login</button>
+            <!-- <button class="menu-btn" onclick="showScreen('help')"> Help</button> -->
         </div>
 
         <!-- Registration Screen -->
@@ -66,6 +69,20 @@
                 <input type="password" id="login-password" placeholder="Enter your password">
             </div>
             <button class="menu-btn btn-primary" onclick="loginUser()"> Login</button>
+            <button class="menu-btn btn-secondary" onclick="showScreen('main-menu')"> Back</button>
+        </div>
+
+        <!-- Help Screen-->
+        <div id="help" class="screen">
+            <h2>Help & User Guide</h2>
+            <div id = "help-inner">
+                <div>
+                <p><b>Login:</b>  Enter your username, password, and PIN to access your account.</p><br>
+                <p><b>Alerts:</b> Error messages will appear in red. Success messages in green.</p><br>
+                <p><b>User Guide:</b> Use the navigation buttons to view account info, withdraw, deposit, or transfer funds.</p><br>
+                <p><b>Contacts:</b>For support, email <a href="mailto:support@bank.com"> support@bank.com </a> or call 1800-123-456.</p><br>
+                </div>
+            </div>
             <button class="menu-btn btn-secondary" onclick="showScreen('main-menu')"> Back</button>
         </div>
 
