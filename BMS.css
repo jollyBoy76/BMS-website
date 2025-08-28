@@ -121,7 +121,7 @@ h2 {
 }
 
 .btn-primary {
-    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    /* background: linear-gradient(45deg, #27ae60, #2ecc71); */
     box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
 }
 /* 
@@ -175,11 +175,11 @@ h2 {
     border-left: 4px solid #3498db;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    /* transition: transform 0.2s ease; */
 }
 
 .history-item:hover {
-    transform: translateX(5px);
+    /* transform: translateX(5px); */
 }
 
 .success-message {
@@ -231,7 +231,7 @@ h2 {
 }
 
 .account-card:hover {
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
