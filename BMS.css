@@ -250,6 +250,16 @@ h2 {
 
 #login_inner .menu-btn {
   flex: 1; /* optional: make both buttons equal width */
+
+}
+
+#account-inner {
+  display: flex;
+  gap: 10px; /* space between Deposit and Withdraw */
+}
+
+#account-inner .menu-btn {
+  flex: 1; /* optional: make both buttons equal width */
 }
 
 @media (max-width: 600px) {

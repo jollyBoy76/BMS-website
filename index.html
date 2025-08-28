@@ -111,8 +111,11 @@
                     Balance: Rs.<span id="balance-display">0.00</span>
                 </div>
             </div>
+            <div id="account-inner">
             <button class="menu-btn btn-primary" onclick="showScreen('deposit')"> Deposit</button>
             <button class="menu-btn btn-warning" onclick="showScreen('withdraw')"> Withdraw</button>
+            </div>
+            <!-- <button class="menu-btn" onclick="showScreen('history')"> Transfer</button> -->
             <button class="menu-btn" onclick="showScreen('history')"> View History</button>
             <button class="menu-btn btn-secondary" onclick="showScreen('user-dashboard')"> Back to Dashboard</button>
         </div>
@@ -142,7 +145,7 @@
                 </div>
                 <div class="input-group">
                     <label for="withdraw-amount">Amount to Withdraw:</label>
-                    <input type="number" id="withdraw-amount" step="0.01" min="0.01" placeholder="0.00">
+                    <input type="number" id="withdraw-amount" step="500.00" min="0.00" placeholder="0.00">
                 </div>
                 <button class="menu-btn btn-warning" onclick="performWithdraw()"> Confirm Withdrawal</button>
             </div>
