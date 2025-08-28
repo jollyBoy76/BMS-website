@@ -8,14 +8,17 @@
     
 </head>
 <body>
-    <!-- <div class="container"> -->
+    <div class="container">
+
+        <div class="logo">
+            <img src="bms_logo.jpg" alt="Bank Logo">
+        </div>
+
         <!-- Main Menu Screen -->
         <div id="main-menu" class="screen active">
             <h1> Banking System</h1>
             <button class="menu-btn" onclick="showScreen('register')"> Register new user</button>
             <button class="menu-btn" onclick="showScreen('login')"> Login</button>
-            <!-- <button class="menu-btn" onclick="showHelp()">❓ Help</button>
-            <button class="menu-btn btn-danger" onclick="exitApp()">🚪 Exit</button> -->
         </div>
 
         <!-- Registration Screen -->
@@ -147,7 +150,7 @@
             <div id="history-list"></div>
             <button class="menu-btn btn-secondary" onclick="showScreen('account-dashboard')"> Back</button>
         </div>
-    <!-- </div> -->
+    </div>
 
     <script src="BMS.js"></script>
 </body>
