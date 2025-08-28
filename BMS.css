@@ -43,7 +43,7 @@ body {
     display: block;
     animation: fadeIn 0.5s ease;
 }
-
+/* 
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -54,7 +54,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 h1 {
     text-align: center;
@@ -88,7 +88,7 @@ h2 {
 
 .menu-btn:hover {
     background: linear-gradient(45deg, #2980b9, #1f4e79);
-    transform: translateY(-2px);
+    /* transform: translateY(-2px); */
     box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
 }
 
@@ -116,15 +116,15 @@ h2 {
 .input-group input:focus,
 .input-group select:focus {
     outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+    /* border-color: #4346fe; */
+    /* box-shadow: 0 0 10px rgba(52, 152, 219, 0.2); */
 }
 
 .btn-primary {
     background: linear-gradient(45deg, #27ae60, #2ecc71);
     box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
 }
-
+/* 
 .btn-primary:hover {
     background: linear-gradient(45deg, #229954, #27ae60);
 }
@@ -154,7 +154,7 @@ h2 {
 
 .btn-secondary:hover {
     background: linear-gradient(45deg, #7f8c8d, #6c7b7d);
-}
+} */
 
 .balance-display {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
