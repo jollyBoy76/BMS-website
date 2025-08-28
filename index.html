@@ -16,7 +16,7 @@
             <div class="logo">
                 <img src="bms_logo.jpg" alt="Bank Logo">
             </div>
-            
+
             <h1> Banking System</h1>
             <button class="menu-btn" onclick="showScreen('register')"> Register new user</button>
             <button class="menu-btn" onclick="showScreen('login')"> Login</button>
@@ -72,8 +72,10 @@
         <div id="user-dashboard" class="screen">
             <h2> Welcome, <span id="user-name-display"></span>!</h2>
             <div id="user-info-display" class="user-info"></div>
+            <div id = "login_inner">
             <button class="menu-btn" onclick="showScreen('create-account')"> Create new account</button>
             <button class="menu-btn" onclick="showScreen('load-account')"> Access account</button>
+            </div>
             <button class="menu-btn btn-secondary" onclick="logout()"> Logout</button>
         </div>
 

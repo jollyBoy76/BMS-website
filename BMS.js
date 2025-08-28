@@ -218,7 +218,7 @@ function createAccount() {
     };
 
     accounts.push(newAccount);
-    showMessage(`${type} Account Created! Account ID: ${newAccount.id}`, 'success');
+    showMessage(`${type} Account Created! Account No: ${newAccount.id}`, 'success');
     
     setTimeout(() => {
         showScreen('user-dashboard');
@@ -244,8 +244,7 @@ function loadAccounts() {
         accountDiv.innerHTML = `
             <h4>${account.type} Account</h4>
             <p><strong>Account ID:</strong> ${account.id}</p>
-            <p><strong>Balance:</strong> Rs.${account.balance.toFixed(2)}</p>
-            <button class="menu-btn" onclick="selectAccount(${account.id})">Select Account</button>
+            <button class="menu-btn" onclick="selectAccount(${account.id})">Select</button>
         `;
         accountsList.appendChild(accountDiv);
     });
